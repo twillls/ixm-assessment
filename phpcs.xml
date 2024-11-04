@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd" name="SwatProject">
+  <!--
+   #
+   # - SwatDrupalStrict (Default)
+   #     New and existing projects should use this ruleset.
+   #
+   #     The recommended ruleset for new and existing Drupal projects of
+   #     all kinds. Comprised of rules from Drupal, DrupalPractice,
+   #     AcquiaPHP, AcquiaDrupalStrict, Slevomat, and custom in-house sniffs.
+   #
+   # - SwatDrupalTransitional
+   #     Only existing projects should consider using this ruleset.
+   #
+   #     Excludes rules that cannot always be autofixed. This is provided
+   #     as a stopgap solution. Please work towards strict compliance.
+   #
+  -->
+
+  <rule ref="SwatDrupalStrict" />
+  <!-- <rule ref="SwatDrupalTransitional" /> -->
+
+  <!--
+   #
+   # IMPORTANT:
+   #   Modifying or disabling rules is allowed, but strongly discouraged. The
+   #   default rules attempt to cover most use cases for consistency and
+   #   reliability. Please reach out to discuss changes that could potentially
+   #   be added to the default rules.
+   #
+   # If necessary, add custom project-specific changes below.
+   #
+  -->
+
+  <arg name="parallel" value="10" />
+  <arg name="cache" value=".phpcs-cache" />
+
+  <!-- Set PHP version to match the project version -->
+  <!-- <config name="testVersion" value="8.2" /> -->
+</ruleset>

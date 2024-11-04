@@ -1,0 +1,19 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Logo
+status: experimental
+props:
+  type: object
+  required:
+    - logo_size
+    - title
+  properties:
+    logo_color:
+      type: string
+    start_color:
+      type: string
+    stop_color:
+      type: string
+    version:
+      type: string
+    version_color:
+      type: string

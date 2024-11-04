@@ -1,0 +1,20 @@
+uuid: 057e435f-59d3-40bc-b241-31836b1744d3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ixm
+_core:
+  default_config_hash: TT1eIxwL6d3eNiKhEZAhaX6LddAmGOrmzKMWvX8pYLo
+id: ixm_page_title
+theme: ixm
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

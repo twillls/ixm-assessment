@@ -1,0 +1,10 @@
+uuid: f4ac3828-73f4-4065-8261-2cfb5a4ad8ee
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3rppUO6kafAY8y5kCwsoB5Q6xTLaEiui4twPg5_Kt-4
+id: utility-menu
+label: 'Utility Menu'
+description: ''
+locked: false

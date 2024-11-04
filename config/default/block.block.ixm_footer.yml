@@ -1,0 +1,27 @@
+uuid: 6dab1a25-292a-4912-acae-8f4e744027fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - ixm
+_core:
+  default_config_hash: 3kedwVMtiJwPnFZo-4CFlrTvH7Ux4kDdgeb2oANrPao
+id: ixm_footer
+theme: ixm
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }

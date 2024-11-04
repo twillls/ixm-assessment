@@ -1,0 +1,27 @@
+uuid: 0aff8ce9-5937-4e64-8921-d20129a9aa00
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ixm
+_core:
+  default_config_hash: oA_4vPQ8nLR5KdJkFT1suLZLOzlraa9X-qy_NnXZmlU
+id: ixm_main_menu
+theme: ixm
+region: navigation
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }

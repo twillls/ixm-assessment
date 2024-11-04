@@ -1,0 +1,12 @@
+#services:
+  #cypress:
+    #image: cypress/included:12.7.0
+    #entrypoint: '/bin/bash'
+    #tty: true
+    #working_dir: /e2e
+    #volumes:
+      #- type: volume
+        #source: project_root
+        #target: /e2e
+        #volume:
+          #nocopy: true

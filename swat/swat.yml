@@ -1,0 +1,18 @@
+project:
+  prefix: IXM123
+  theme:
+    human_name: ixm
+    name: ixm
+    description: 'Custom theme for ixm.'
+    dir: '${docroot}/themes/custom/ixm'
+    status: true
+swat:
+  version: 6.1.18
+  host: _none
+  scripts:
+    dir: /scripts
+  packages:
+    - layout
+    - developer
+  developer:
+    modules: [webform]

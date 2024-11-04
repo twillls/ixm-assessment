@@ -1,0 +1,26 @@
+name: IXM Developer Skill Assessment
+type: theme
+description: Theme used in IXM developer skill assessment.
+base theme: stable9
+core_version_requirement: ^10 || ^11
+
+libraries:
+  - ixm/global-theming
+
+libraries-extend:
+  core/drupal.dialog:
+    - ixm/drupal.dialog
+
+regions:
+  header_top: Header Top
+  navigation: Navigation
+  content_top: Content Top
+  sidebar: Sidebar
+  content: Content
+  footer: Footer
+
+ckeditor5-stylesheets:
+  - public/css/ckeditor.css
+
+dependencies:
+  - drupal:sdc

@@ -1,0 +1,9 @@
+header {
+  &.position-sticky {
+    top: 0;
+
+    @include media-breakpoint-up(lg) {
+      top: var(--drupal-displace-offset-top, 0);
+    }
+  }
+}

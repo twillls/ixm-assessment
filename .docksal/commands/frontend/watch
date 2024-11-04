@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+#: exec_target = cli
+
+## Build and watch for changes in a frontend component package.
+##
+## Usage: fin frontend/watch [package_name|optional]
+
+corepack enable && yarn watch "${1:-@theme/global}"

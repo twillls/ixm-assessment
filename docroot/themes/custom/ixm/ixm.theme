@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+/**
+ * Load theme include files.
+ */
+foreach (glob(dirname(__FILE__) . '/includes/*.php') as $filename) {
+  include_once $filename;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@theme/global",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.0.0",
+    "bootstrap": "~5.3.0"
+  }
+}

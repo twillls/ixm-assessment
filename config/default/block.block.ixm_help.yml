@@ -1,0 +1,22 @@
+uuid: 6d9aa780-019b-46c3-a108-3d43e14234ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ixm
+_core:
+  default_config_hash: cLrKzD2cnFtPCPT0tV7TyxrZs6stSp4y1RuWECjVofI
+id: ixm_help
+theme: ixm
+region: content_top
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

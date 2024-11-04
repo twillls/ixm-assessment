@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+#: exec_target = cli
+
+## Reset all installed packages and public folders.
+##
+## Usage: fin frontend/reset
+
+shopt -s globstar
+rm -rf ./node_modules ./*/themes/custom/*/public ./*/*/custom/**/components/*/public
+corepack enable && yarn install && yarn build

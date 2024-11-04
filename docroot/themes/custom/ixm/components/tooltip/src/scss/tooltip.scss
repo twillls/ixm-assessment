@@ -1,0 +1,6 @@
+@import "@theme/global/src/scss/abstracts/scaffold";
+@import "bootstrap/scss/tooltip";
+
+[data-bs-toggle="tooltip"] {
+  cursor: pointer;
+}

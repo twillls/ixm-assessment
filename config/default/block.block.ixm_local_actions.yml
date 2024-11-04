@@ -1,0 +1,20 @@
+uuid: 9de90b41-9744-4c1e-a6c4-d94965fc94a0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ixm
+_core:
+  default_config_hash: 10jjQYgBe8x7KWrx69n0XlwGsUbBOBk3bafqUmbwyOc
+id: ixm_local_actions
+theme: ixm
+region: content_top
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

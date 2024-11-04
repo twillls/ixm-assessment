@@ -1,0 +1,18 @@
+<footer class="bg-secondary text-light py-5" role="contentinfo">
+  <div class="container">
+    <div class="row">
+
+      {% if page.footer %}
+        <div class="col-12 col-lg">
+          {{ page.footer }}
+        </div>
+      {% endif %}
+
+      <div class="col-12 text-lg-end">
+        <hr class="border-top border-white opacity-50 my-5">
+        {{ '© ' ~ "now"|date('Y') ~ ' ImageX Media All Rights Reserved.'|t }}
+      </div>
+
+    </div>
+  </div>
+</footer>

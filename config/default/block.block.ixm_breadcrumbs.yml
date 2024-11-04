@@ -1,0 +1,22 @@
+uuid: 572e8c99-32c5-4908-9c55-f60c1d8145d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ixm
+_core:
+  default_config_hash: w-C-Npc8TLN-EbTtoU0K6cDqNBW_9pYcMpkLVRTm-14
+id: ixm_breadcrumbs
+theme: ixm
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

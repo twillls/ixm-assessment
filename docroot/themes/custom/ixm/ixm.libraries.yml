@@ -1,0 +1,34 @@
+global-theming:
+  version: VERSION
+  js:
+    public/js/global.js: { minified: true }
+  css:
+    theme:
+      public/css/global.css: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+header:
+  version: VERSION
+  js:
+    public/js/header.js: { minified: true }
+
+# Component Example.
+component.tooltip:
+  version: VERSION
+  js:
+    components/tooltip/public/js/tooltip.js: { minified: true }
+  css:
+    component:
+      components/tooltip/public/css/tooltip.css: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/once
+
+drupal.dialog:
+  version: VERSION
+  css:
+    theme:
+      public/css/ui-dialog.css: {}

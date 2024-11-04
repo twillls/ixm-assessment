@@ -1,0 +1,22 @@
+{
+  "require": {
+    "harvesthq/chosen": "~1.8.7"
+  },
+  "repositories": {
+    "chosen": {
+      "type": "package",
+      "package": {
+        "name": "harvesthq/chosen",
+        "version": "1.8.7",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://github.com/harvesthq/chosen-package.git",
+          "type": "git",
+          "reference": "v1.8.7"
+        }
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

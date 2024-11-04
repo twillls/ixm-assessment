@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Run Cypress commands.
+##
+## Usage: fin cypress [args]
+
+fin exec --in=cypress cypress run --config baseUrl="https://$VIRTUAL_HOST" "$@"
+

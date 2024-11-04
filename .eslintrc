@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "plugin:yml/recommended",
+    "plugin:security/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "**/config/",
+    "**/dist/",
+    "**/public/"
+  ],
+  "rules": {
+    "yml/indent": ["error", 2],
+    "prettier/prettier": [
+      "error", {
+        "printWidth": 120
+      }
+    ],
+    "no-unused-vars": [
+      "error", {
+        "vars": "local",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "max-nested-callbacks": ["error", 6],
+    "import/no-mutable-exports": "error",
+    "no-plusplus": [
+      "error", {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "valid-jsdoc": [
+      "error", {
+        "prefer": { "returns": "return", "property": "prop" },
+        "requireReturn": false
+      }
+    ],
+    "no-empty": [
+      "error", {
+        "allowEmptyCatch": true
+      }
+    ],
+    "global-require": "off",
+    "import/no-unresolved": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "no-alert": "off",
+    "no-param-reassign": "off",
+    "no-prototype-builtins": "off",
+    "no-undef": "off",
+    "func-names": "off",
+    "security/detect-object-injection": "off"
+  }
+}

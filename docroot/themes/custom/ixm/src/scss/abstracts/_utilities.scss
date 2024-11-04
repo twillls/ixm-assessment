@@ -1,0 +1,17 @@
+@use "sass:map";
+
+// @see https://getbootstrap.com/docs/5.2/utilities/api/#add-utilities
+
+// Add responsive utilities for borders.
+$utilities: map.merge(
+  $utilities,
+  (
+    "border":
+      map.merge(
+        map.get($utilities, "border"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);

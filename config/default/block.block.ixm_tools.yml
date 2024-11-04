@@ -1,0 +1,27 @@
+uuid: 115a1a6c-6ec6-420f-aeb4-b692ec14cf5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - ixm
+_core:
+  default_config_hash: pO9VKfwmCbBdt-3HIAoK65c-e-Dt9Xf7e2pJH4i_d0E
+id: ixm_tools
+theme: ixm
+region: sidebar
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

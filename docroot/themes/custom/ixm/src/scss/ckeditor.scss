@@ -1,0 +1,16 @@
+@use "sass:meta";
+
+.ck-content {
+  // Overrides.
+  // https://github.com/ckeditor/ckeditor5/issues/1142#issuecomment-1221497940
+
+  --ck-z-default: 100;
+  --ck-z-modal: calc(var(--ck-z-default) + 999);
+
+  // Theme components.
+  @include meta.load-css("@theme/global/src/scss/global");
+
+  .stretched-link::after {
+    content: unset;
+  }
+}

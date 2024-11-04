@@ -1,0 +1,22 @@
+uuid: eceb5884-7124-42bc-a9f4-3dd23da9780a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ixm
+_core:
+  default_config_hash: IPNNGW2Q5qlWKGEx1jn27xTSm_f1F2u9HGmEfJ7vyU8
+id: ixm_content
+theme: ixm
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

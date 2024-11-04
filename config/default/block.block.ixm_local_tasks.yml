@@ -1,0 +1,22 @@
+uuid: 16674d65-38d0-4cba-882e-88ae29857daa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ixm
+_core:
+  default_config_hash: yERXUygyRoQhOj1gdQEtz9apmQeSX-2uK-3hxGUb2Uc
+id: ixm_local_tasks
+theme: ixm
+region: content_top
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

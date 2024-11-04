@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Styles for jQuery UI dialog.
+ */
+
+.ui-dialog {
+  z-index: 1260;
+
+  .ui-dialog-titlebar-close {
+    opacity: 0.6;
+    border: 1px solid var(--bs-gray);
+    border-radius: 3px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjAiPgoJPHBhdGggZD0ibTI1Ni0yMDAtNTYtNTYgMjI0LTIyNC0yMjQtMjI0IDU2LTU2IDIyNCAyMjQgMjI0LTIyNCA1NiA1Ni0yMjQgMjI0IDIyNCAyMjQtNTYgNTYtMjI0LTIyNC0yMjQgMjI0WiIvPgo8L3N2Zz4=");
+    background-position: center;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.ui-widget-overlay {
+  z-index: 1259;
+}

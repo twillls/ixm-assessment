@@ -1,0 +1,22 @@
+uuid: 43bcc998-1a60-416d-9813-421c7a388bae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ixm
+_core:
+  default_config_hash: 48epT2TU6ZbztLHntey81A9bgVS62vMp9dNJsk7m51o
+id: ixm_messages
+theme: ixm
+region: content_top
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
