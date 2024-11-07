@@ -57,29 +57,57 @@ For this project, you'll be tasked with developing a landing page that incorpora
 * Focus on clean, maintainable code.
 * Ensure the website is responsive and optimized for both desktop and mobile.
 
-Good luck!
 
+---
 
-## Project Setup:
+## Getting Started
 The project includes the foundational setup commonly used in IXM projects.
+
+Here are the steps to get started with the project:
 
 ### Docker (Docksal)
 You need the latest version of Docksal to run the environment. If you don't have Docksal installed, you can find installation instructions [here](https://docksal.io/installation).
-After Docksal is installed you can run
 
-```bash
-fin init
-```
+After Docksal is installed you can continue to Project Setup:
 
-### Database
-This project includes a DB dump that should be restored after you set up your environment.
-
-```bash
-fin db import ./database/db.sql --progress
-```
-Once you finish your assessment you should create a dump of your DB and update the folder with your database.
-```bash
-fin db dump > database/db.sql
-```
 ### Frontend
 The project uses SDC and in case you have any additional questions please consult the `FRONTEND.MD`
+
+
+### Project Setup
+
+1-) Edit your `/etc/hosts` file to include the following:
+
+`127.0.0.1 ixm-developer-skill-assessment.docksal.site`
+
+2-) Install the [Docksal Addon for local HTTPS](https://docs.docksal.io/tools/mkcert/#setup-and-usage-via-addon)
+
+3-) Create the local certificates for `*.ixm-developer-skill-assessment.docksal.site` and `ixm-developer-skill-assessment.docksal.site`
+```shell
+fin mkcert create
+```
+
+4-) Restart the project to apply the new certificates.
+```shell
+fin project restart
+```
+
+5-) Copy Local Settings and Services to the project:
+```shell
+cp .docksal/local.settings.php docroot/sites/default/settings/local.settings.php
+cp .docksal/development.services.yml docroot/sites/development.services.yml
+```
+
+5-) Install the project dependencies using composer within the container.
+
+```shell
+fin composer install
+```
+
+6-) Import the provided database dump.
+```shell
+fin db import ./database/db.sql --progress
+```
+Once it's finished, you should be able to open [https://ixm-developer-skill-assessment.docksal.site/]()
+
+Good luck!
