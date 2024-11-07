@@ -108,6 +108,13 @@ fin composer install
 ```shell
 fin db import ./database/db.sql --progress
 ```
+
+7-) Install frontend packages and build frontend assets using yarn
+```shell
+fin swat frontend:install
+fin swat frontend:build
+```
+
 Once it's finished, you should be able to open [https://ixm-developer-skill-assessment.docksal.site/]()
 
 Good luck!
