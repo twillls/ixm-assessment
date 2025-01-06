@@ -2,52 +2,61 @@
 
 ## Objective:
 This assessment aims to evaluate your expertise in both frontend and backend Drupal development, as well as your general web development skills.
+You'll be tasked with developing a landing page that incorporates several key features often encountered in our projects. 
 
-## Assignment Overview:
-
-For this project, you'll be tasked with developing a landing page that incorporates several key features often encountered in our projects. The design for the landing page is provided [here](https://www.figma.com/design/uGmBtSv3LaG7QZnbRWBP5S/IXM-Developer-Skill-Assessment).
+## The Project Design
+The design for the landing page is provided on Figma. You can find it by using this link [Imagex Skill Assesment Design](https://www.figma.com/design/uGmBtSv3LaG7QZnbRWBP5S/IXM-Developer-Skill-Assessment).
 
 ## Requirements:
 
-* The project must be built using Bootstrap.
+* The project must be built using [Bootstrap](https://getbootstrap.com/).
+* We expect a fully responsive theme.
 * Feel free to use any Drupal modules or make any architectural decisions you deem necessary.
 * Implement small, frequent commits with clear and descriptive commit messages. Each commit should address a single feature.
-* You should not spend more than 30 hours on this assignment. Please indicate the total time spent on each of the features in your README.md.
-* Provide a copy of the database including the content used for the landing page.
+* You should not spend more than 16 hours on this assignment. Please indicate the total time spent on each of the features in your README.md.
+* Provide a copy of the database including the content used for the landing page. Add it in the `database` folder with the name `skill-assesment.sql`
 
 ## Landing Page Features:
 
 ### Header:
+
+![Header](images/header.png)
 
 * The company logo.
 * A customizable menu.
 * A CTA (Call to Action) button.
 
 ### Hero Banner:
+
+#### Desktop
+![Hero Desktop](images/hero_desktop.png)
+
+#### Mobile
+![Hero Mobile](images/hero_mobile.png)
+
 * A custom block that can be placed on any page.
 * Users should be able to add a title, description, image, and CTA button.
 
-### Services Section:
-* A list of service cards that highlight different services.
-* Each card should be customizable to be one of the 3 variants and should link to a page.
-
-### Call to Action Block:
-* A reusable custom block for calls to action.
-
-### Our Process:
-* An accordion-style list detailing our working process, with items that can be expanded and collapsed.
-
 ### Team Section:
+
+#### Desktop
+![Team Desktop](images/team_desktop.png)
+
+#### Mobile
+![Team Mobile](images/team_mobile.png)
 
 * A block displaying team members.
 * Data should be fetched from an external [API](https://dummyjson.com/docs).
 * API integration must include authentication, and the block should allow configuration to select the number of team members displayed.
 
-### Contact Form:
-* A webform where users can email us.
-* If the user selects the "Say Hi" option, an email should be sent to hi@example.com. If "Get a Quote" is selected, it should be sent to quotes@example.com.
-
 ### Footer:
+
+#### Desktop
+![Footer Desktop](images/footer_desktop.png)
+
+#### Mobile
+![Footer Mobile](images/footer_mobile.png)
+
 * The company logo.
 * A customizable menu.
 * A list of social media links.
