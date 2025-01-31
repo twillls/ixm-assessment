@@ -2,7 +2,7 @@
 
 ## Objective:
 This assessment aims to evaluate your expertise in both frontend and backend Drupal development, as well as your general web development skills.
-You'll be tasked with developing a landing page that incorporates several key features often encountered in our projects. 
+You'll be tasked with developing a landing page that incorporates several key features often encountered in our projects.
 
 ## The Project Design
 The design for the landing page is provided on Figma. You can find it by using this link [Imagex Skill Assesment Design](https://www.figma.com/design/uGmBtSv3LaG7QZnbRWBP5S/IXM-Developer-Skill-Assessment).
@@ -75,7 +75,12 @@ The project includes the foundational setup commonly used in IXM projects.
 Here are the steps to get started with the project:
 
 ### Docker (Docksal)
-You need the latest version of Docksal to run the environment. If you don't have Docksal installed, you can find installation instructions [here](https://docksal.io/installation).
+You need the *latest version* of Docksal to run the environment. If you don't have Docksal installed, you can find installation instructions [here](https://docksal.io/installation).
+
+If you're not sure if you have the latest version of Docksal, you can run
+```shell
+fin update
+```
 
 After Docksal is installed you can continue to Project Setup:
 
