@@ -2,6 +2,8 @@ grumphp:
   ascii:
     succeeded: ~
     failed: ~
+  git_hook_variables:
+    EXEC_GRUMPHP_COMMAND: fin exec php
   tasks:
     composer: null
     phplint: null
@@ -25,7 +27,6 @@ grumphp:
         - '/^bugfix\/.*/'
         - '/^hotfix\/.*/'
         - '/^release\/.*/'
-        - '/^IXM23-\d+/'
         - 'stage'
         - 'staging'
         - 'production'
