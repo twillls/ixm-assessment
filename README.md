@@ -4,6 +4,19 @@
 This assessment aims to evaluate your expertise in both frontend and backend Drupal development, as well as your general web development skills.
 You'll be tasked with developing a landing page that incorporates several key features often encountered in our projects.
 
+## Workflow:
+1. Fork this repository.
+2. Create a new branch with your name.
+3. Develop the landing page.
+4. Commit your changes.
+5. Push your branch to your fork.
+6. Create a pull request to the main repository.
+7. Add a comment to the pull request with the total time spent on each of the features.
+8. Notify us via email when you have completed the task.
+9. Wait for feedback.
+10. Good luck!
+11. If you have any questions, please reach out to us.
+
 ## The Project Design
 The design for the landing page is provided on Figma. You can find it by using this link [Imagex Skill Assesment Design](https://www.figma.com/design/uGmBtSv3LaG7QZnbRWBP5S/IXM-Developer-Skill-Assessment).
 
