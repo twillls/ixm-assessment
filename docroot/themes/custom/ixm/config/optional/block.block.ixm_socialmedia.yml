@@ -1,0 +1,25 @@
+uuid: 0688dd17-04a2-405f-a32c-c128fa041bfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - system
+  theme:
+    - ixm
+id: ixm_socialmedia
+theme: ixm
+region: footer
+weight: -3
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social Media'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

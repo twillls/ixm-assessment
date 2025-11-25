@@ -1,0 +1,24 @@
+uuid: 550b5163-c377-4144-9128-68b635cab7c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.hero
+  module:
+    - text
+id: paragraph.hero.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: hero
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

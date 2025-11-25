@@ -1,6 +1,19 @@
 <footer class="bg-secondary text-light py-5" role="contentinfo">
   <div class="container">
     <div class="row">
+      {# logo - change if needs to be dynamic. #}
+      <a class="navbar-brand" href="{{ url('<front>') }}">
+        {% include 'ixm:logo' with {
+          logo_size: '200',
+          logo_color: 'var(--bs-black)',
+          start_color: '#f7931e',
+          stop_color: '#ed1c24',
+          version: '6',
+          version_color: 'var(--bs-white)',
+          title: 'Site logo'
+        } %}
+
+      </a>
 
       {% if page.footer %}
         <div class="col-12 col-lg">

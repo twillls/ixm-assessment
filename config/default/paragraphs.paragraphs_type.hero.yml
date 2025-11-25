@@ -1,0 +1,10 @@
+uuid: c4d0162f-95b9-4b2c-950d-80d2cc244f16
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: 'A hero to organize above-the-fold items on your pages'
+behavior_plugins: {  }
