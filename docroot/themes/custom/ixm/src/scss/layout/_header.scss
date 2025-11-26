@@ -1,9 +1,15 @@
 header {
+  padding: 4.375rem;
+
   &.position-sticky {
     top: 0;
 
     @include media-breakpoint-up(lg) {
       top: var(--drupal-displace-offset-top, 0);
     }
+  }
+
+  .navbar-brand {
+    padding: 0;
   }
 }

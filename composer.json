@@ -23,6 +23,7 @@
         "drupal/layout_builder_modal": "^2.0",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/paragraphs": "^1.18",
+        "drupal/pathauto": "^1.14",
         "drupal/views_bootstrap": "^5.4",
         "drupal/webform": "^6.2",
         "imagex/swat": "~6.1.0",

@@ -1,0 +1,29 @@
+<div class="hero container">
+    <div class="hero__grid grid">
+            {% if block('title') is defined and block('title') | trim is not empty %}
+            <div class="hero__grid__title">
+                <h1>
+                    {{ block('title') | striptags | trim }}
+                </h1>
+            </div>
+            {% endif %}
+
+            {% if block('body') is defined and block('body') | trim is not empty %}
+                <div class="hero__grid__body fs-5">
+                    {{ block('body') }}
+                </div>
+            {% endif %}
+
+            {% if block('cta') is defined and block('cta') | trim is not empty %}
+                <div class="hero__grid__cta btn btn-secondary">
+                    {{ block('cta') }}
+                </div>
+            {% endif %}
+
+        <div class="hero__grid__image">
+            {% if block('image') is defined and block('image') | trim is not empty %}
+                {{ block('image') }}
+            {% endif %}
+        </div>
+    </div>
+</div>

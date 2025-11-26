@@ -45,7 +45,9 @@
 @import "bootstrap/scss/utilities/api";
 
 // Import theme components
-
 @import "abstracts/helpers";
+@import "abstracts/variables";
 @import "base/*";
+@import "components/hero";
+@import "components/navigation";
 @import "layout/*";

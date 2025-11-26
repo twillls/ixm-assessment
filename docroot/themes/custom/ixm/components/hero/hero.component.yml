@@ -1,0 +1,17 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Hero
+description: Hero section for landing pages
+status: experimental
+slots:
+  title:
+    title: Title
+    description: Title of the Hero
+  body:
+    title: Body
+    description: Description/body of the Hero
+  cta:
+    title: CTA
+    description: Call to Action link
+  image:
+    title: Image
+    description: Hero Image

@@ -1,6 +1,6 @@
 {{ attach_library('ixm/header') }}
 
-<header class="position-sticky z-1 mb-5">
+<header class="position-sticky z-1 bg-white">
 
   {% if page.header_top %}
     <div class="bg-dark text-white">
@@ -14,16 +14,16 @@
     </div>
   {% endif %}
 
-  <div class="bg-light">
+  <div class="bg-white">
     <div class="container">
 
       {% set nav_attributes = create_attribute() %}
       {% set nav_classes = [
         'navbar',
         'navbar-expand-lg',
-        'align-items-lg-end',
+        'align-items-lg-center',
         'px-0',
-        'py-3',
+        'py-0',
         'navbar-light',
       ] %}
 

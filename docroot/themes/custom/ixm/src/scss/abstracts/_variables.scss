@@ -10,3 +10,18 @@ $grid-breakpoints: (
   // xl: 1200px,
   // xxl: 1400px
 );
+
+// Base colors
+$primary: #ff1a39;
+$secondary: #5b24ff;
+$soft-black: #191a23;
+$black: #000;
+
+// Font
+$font-family-base: "Space Grotesk", sans-serif;
+
+// Bootstrap overrides
+:root {
+  --bs-light-rgb: 243, 243, 243;
+  --bs-btn-bg: $secondary;
+}

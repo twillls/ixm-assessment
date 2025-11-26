@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.hero.field_body
     - field.field.paragraph.hero.field_call_to_action
     - field.field.paragraph.hero.field_image
-    - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
   module:
     - link
@@ -39,14 +38,6 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
-  field_title:
-    type: text_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true
