@@ -1,42 +1,44 @@
 // Add footer styles to this file.
 .footer {
-    border-radius: 2.8125rem 2.8125rem 0 0;
-    padding: 3.4375rem 3.75rem 3.125rem;
+  padding: 3.4375rem 3.75rem 3.125rem;
+  border-radius: 2.8125rem 2.8125rem 0 0;
 
-    hr {
-        opacity: 1;
+  hr {
+    opacity: 1;
+  }
+
+  .nav.navbar-nav {
+    .nav-link {
+      text-decoration: underline;
+      font-size: 1.125rem;
     }
 
-    .nav.navbar-nav {
-        @include media-breakpoint-up(lg) {
-            flex-direction: row;
-        }
+    &.menu--social-media {
+      gap: 1.25rem;
 
-        .nav-link {
-            font-size: 1.125rem;
-            text-decoration: underline;
-        }
+      a {
+        width: 1.875rem;
+        height: 1.875rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0;
+      }
 
-        &.menu--social-media {
-            gap: 1.25rem;
+      a[href*="facebook"] {
+        background-image: url("../images/facebook.svg");
+      }
 
-            a {
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 1.875rem;
-                height: 1.875rem;
-                font-size: 0;
-            }
+      a[href*="linkedin"] {
+        background-image: url("../images/linkedin.svg");
+      }
 
-            a[href*="facebook"] {
-                background-image: url('../images/facebook.svg');
-            }
-            a[href*="linkedin"] {
-                background-image: url('../images/linkedin.svg');
-            }
-            a[href*="twitter"] {
-                background-image: url('../images/twitter.svg');
-            }
-        }
+      a[href*="twitter"] {
+        background-image: url("../images/twitter.svg");
+      }
     }
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+    }
+  }
 }

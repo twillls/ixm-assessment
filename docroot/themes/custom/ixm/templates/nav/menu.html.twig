@@ -30,12 +30,12 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass(['nav', 'navbar-nav', 'align-items-center', menu_name]) }}>
+      <ul{{ attributes.addClass(['nav', 'navbar-nav', 'align-items-xl-center', menu_name]) }}>
     {% else %}
       <ul class="dropdown-menu">
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes.addClass('nav-item fs-5 text-black') }}>
+      <li{{ item.attributes.addClass('nav-item fs-4 fs-xl-5 fw-medium fw-xl-normal text-black') }}>
 
         {% set link_attributes = {
           'class': [

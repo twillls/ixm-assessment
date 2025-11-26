@@ -1,15 +1,60 @@
 header {
-  padding: 4.375rem;
+  padding: 1rem 0.75rem;
 
   &.position-sticky {
     top: 0;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       top: var(--drupal-displace-offset-top, 0);
     }
   }
 
   .navbar-brand {
     padding: 0;
+
+    @include media-breakpoint-down(xl) {
+      svg path[fill="#5B24FF"] {
+        fill: #180733;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: 0;
+
+    .navbar-toggler-icon {
+      background-image: url("../images/menu.svg");
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    .navbar.navbar-expand-xl {
+      position: unset;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 4.375rem 0;
+  }
+
+  @include media-breakpoint-down(xl) {
+    .navbar-collapse {
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      left: 0;
+      width: 100dvw;
+      height: 0;
+      background-color: $light-grey;
+
+      &.show {
+        height: calc(100dvh - 4.25rem);
+      }
+
+      > div {
+        margin: 3.125rem 1.875rem 1.875rem 1.25rem;
+      }
+    }
   }
 }

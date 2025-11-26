@@ -7,13 +7,19 @@ $grid-breakpoints: (
   // sm: 576px,
   // md: 768px,
   lg: 992px,
-  // xl: 1200px,
+  xl: 1200px,
   // xxl: 1400px
 );
+
+// Containers
+.container {
+  max-width: 77.5625rem;
+}
 
 // Base colors
 $primary: #ff1a39;
 $secondary: #5b24ff;
+$light-grey: #f3f3f3;
 $soft-black: #191a23;
 $black: #000;
 
@@ -22,6 +28,7 @@ $font-family-base: "Space Grotesk", sans-serif;
 
 // Bootstrap overrides
 :root {
+  --bs-light: $light-grey;
   --bs-light-rgb: 243, 243, 243;
   --bs-btn-bg: $secondary;
 }
