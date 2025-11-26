@@ -1,31 +1,32 @@
-<footer class="bg-secondary text-light py-5" role="contentinfo">
-  <div class="container">
-    <div class="row">
+<footer class="container px-0 py-0" role="contentinfo">
+  <div class="footer bg-light">
+    <div class="row align-items-center justify-content-between">
       {# logo - change if needs to be dynamic. #}
-      <a class="navbar-brand" href="{{ url('<front>') }}">
-        {% include 'ixm:logo' with {
-          logo_size: '200',
-          logo_color: 'var(--bs-black)',
-          start_color: '#f7931e',
-          stop_color: '#ed1c24',
-          version: '6',
-          version_color: 'var(--bs-white)',
-          title: 'Site logo'
-        } %}
-
-      </a>
+      <div class="col col-lg-2"
+        <a class="navbar-brand" href="{{ url('<front>') }}">
+          {% include 'ixm:logo' with {
+            logo_size: '200',
+            logo_color: 'var(--bs-black)',
+            start_color: '#f7931e',
+            stop_color: '#ed1c24',
+            version: '6',
+            version_color: 'var(--bs-white)',
+            title: 'Site logo'
+          } %}
+        </a>
+      </div>
 
       {% if page.footer %}
-        <div class="col-12 col-lg">
+        <div class="col-12 col-lg-9">
           {{ page.footer }}
         </div>
       {% endif %}
-
-      <div class="col-12 text-lg-end">
-        <hr class="border-top border-white opacity-50 my-5">
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <hr class="border-top border-secondary my-5">
         {{ '© ' ~ "now"|date('Y') ~ ' ImageX Media All Rights Reserved.'|t }}
       </div>
-
     </div>
   </div>
 </footer>

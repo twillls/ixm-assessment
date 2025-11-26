@@ -1,1 +1,42 @@
 // Add footer styles to this file.
+.footer {
+    border-radius: 2.8125rem 2.8125rem 0 0;
+    padding: 3.4375rem 3.75rem 3.125rem;
+
+    hr {
+        opacity: 1;
+    }
+
+    .nav.navbar-nav {
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+
+        .nav-link {
+            font-size: 1.125rem;
+            text-decoration: underline;
+        }
+
+        &.menu--social-media {
+            gap: 1.25rem;
+
+            a {
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 1.875rem;
+                height: 1.875rem;
+                font-size: 0;
+            }
+
+            a[href*="facebook"] {
+                background-image: url('../images/facebook.svg');
+            }
+            a[href*="linkedin"] {
+                background-image: url('../images/linkedin.svg');
+            }
+            a[href*="twitter"] {
+                background-image: url('../images/twitter.svg');
+            }
+        }
+    }
+}
