@@ -1,0 +1,27 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Card
+description: Card to display team members
+status: experimental
+props:
+  type: object
+  required:
+    - name
+  properties:
+    position:
+      type: string
+    age:
+      type: string
+    ageLabel:
+      type: string
+    location:
+      type: string
+    locationLabel:
+      type: string
+    education:
+      type: string
+    educationLabel:
+      type: string
+slots:
+  image:
+    title: Image
+    description: Card image

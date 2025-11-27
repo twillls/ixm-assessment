@@ -1,0 +1,63 @@
+<div class="card">
+  <div class="card__header">
+    {# Name #}
+    {% if name|render|striptags|trim %}
+      <h3 class="card__name">
+        {{ name }}
+      </h3>
+    {% endif %}
+
+    {# Position #}
+    {% if position|render|striptags|trim %}
+      <span class="card__position">
+        {{ position }}
+      </span>
+    {% endif %}
+
+    {% if block('image') is defined and block('image') | trim is not empty %}
+      <div class="card__image">
+        {{ block('image') }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if age|render|striptags|trim or location|render|striptags|trim or education|render|striptags|trim %}
+    <div class="card__details">
+      {# Age #}
+      {% if age|render|striptags|trim %}
+        <div class="card__details--age">
+          <span class="card__details--label">
+            {{ ageLabel }}
+          </span>
+          <span class="age">
+            {{ age }}
+          </span>
+        </div>
+      {% endif %}
+
+      {# Location #}
+      {% if location|render|striptags|trim %}
+        <div class="card__details--location">
+          <span class="card__details--label">
+            {{ locationLabel }}
+          </span>
+          <span class="location">
+            {{ location }}
+          </span>
+        </div>
+      {% endif %}
+
+      {# Education #}
+      {% if education|render|striptags|trim %}
+        <div class="card__details--education">
+          <span class="card__details--label">
+            {{ educationLabel }}
+          </span>
+          <span class="education">
+            {{ education }}
+          </span>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
