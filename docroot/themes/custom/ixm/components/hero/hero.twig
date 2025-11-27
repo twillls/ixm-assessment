@@ -9,7 +9,7 @@
             {% endif %}
 
             {% if block('body') is defined and block('body') | trim is not empty %}
-                <div class="hero__grid__body fs-5">
+                <div class="hero__grid__body">
                     {{ block('body') }}
                 </div>
             {% endif %}
