@@ -1,7 +1,6 @@
 // Add footer styles to this file.
 .footer {
   padding: 3.4375rem 3.75rem 3.125rem;
-  border-radius: 2.8125rem 2.8125rem 0 0;
 
   hr {
     opacity: 1;
@@ -35,10 +34,29 @@
       a[href*="twitter"] {
         background-image: url("../images/twitter.svg");
       }
+
+      @include media-breakpoint-down(xl) {
+        flex-direction: row;
+      }
     }
 
     @include media-breakpoint-up(xl) {
       flex-direction: row;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    border-radius: 2.8125rem 2.8125rem 0 0;
+  }
+
+  @include media-breakpoint-down(xl) {
+    .col.col-xl-2,
+    .menu--footer {
+      margin-bottom: 2.1875rem;
+    }
+
+    .nav.navbar-nav {
+      gap: 0.9375rem;
     }
   }
 }

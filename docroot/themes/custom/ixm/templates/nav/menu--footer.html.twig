@@ -28,9 +28,9 @@
 
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
-  {% if items %}
+  {% if items %}  
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass(['nav', 'navbar-nav', 'align-items-center', menu_name]) }}>
+      <ul{{ attributes.addClass(['nav', 'navbar-nav', 'align-items-center', 'justify-content-center', menu_name]) }}>
     {% else %}
       <ul class="dropdown-menu">
     {% endif %}

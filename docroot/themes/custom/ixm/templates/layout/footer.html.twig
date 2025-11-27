@@ -2,8 +2,8 @@
   <div class="footer bg-light">
     <div class="row align-items-center justify-content-between">
       {# logo - change if needs to be dynamic. #}
-      <div class="col col-lg-2"
-        <a class="navbar-brand" href="{{ url('<front>') }}">
+      <div class="col col-xl-2">
+        <a class="navbar-brand text-center d-block" href="{{ url('<front>') }}">
           {% include 'ixm:logo' with {
             logo_size: '200',
             logo_color: 'var(--bs-black)',
@@ -17,7 +17,7 @@
       </div>
 
       {% if page.footer %}
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-xl-9">
           {{ page.footer }}
         </div>
       {% endif %}
