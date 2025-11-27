@@ -40,6 +40,14 @@
     }
   }
 
+  @include media-breakpoint-up(lg) {
+    margin-top: 4.375rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 0;
+  }
+
   @include media-breakpoint-down(lg) {
     margin-top: 0.75rem;
     margin-bottom: 1.875rem;
