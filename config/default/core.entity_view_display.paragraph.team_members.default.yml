@@ -1,0 +1,41 @@
+uuid: 2bcce255-1776-4c99-ada4-a8d17bb6f2b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_members.field_body
+    - field.field.paragraph.team_members.field_title
+    - field.field.paragraph.team_members.field_view_reference
+    - paragraphs.paragraphs_type.team_members
+  module:
+    - text
+    - viewsreference
+id: paragraph.team_members.default
+targetEntityType: paragraph
+bundle: team_members
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_view_reference:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

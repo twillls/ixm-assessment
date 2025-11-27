@@ -1,10 +1,11 @@
 uuid: 3d6b6383-95da-49f6-8fc3-d9b886b79dcd
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.landing_page.field_hero
+    - field.field.node.landing_page.field_page_content
     - node.type.landing_page
   module:
     - user
@@ -20,3 +21,4 @@ content:
     region: content
 hidden:
   field_hero: true
+  field_page_content: true

@@ -1,0 +1,30 @@
+uuid: cd6b6ba2-6f92-4073-bca7-25ae2e056747
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_reference
+    - paragraphs.paragraphs_type.team_members
+  module:
+    - viewsreference
+id: paragraph.team_members.field_view_reference
+field_name: field_view_reference
+entity_type: paragraph
+bundle: team_members
+label: 'View reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    team_members: team_members
+  enabled_settings: {  }
+field_type: viewsreference

@@ -58,6 +58,7 @@ module:
   user: 0
   views_bootstrap: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   pathauto: 1
   views: 10

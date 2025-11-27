@@ -1,0 +1,32 @@
+uuid: e5a21807-145b-4c67-ae80-ea05fd1ce198
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_member.field_age
+    - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_lives_in
+    - field.field.node.team_member.field_name
+    - field.field.node.team_member.field_position
+    - field.field.node.team_member.field_university
+    - node.type.team_member
+  module:
+    - user
+id: node.team_member.teaser
+targetEntityType: node
+bundle: team_member
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_age: true
+  field_image: true
+  field_lives_in: true
+  field_name: true
+  field_position: true
+  field_university: true

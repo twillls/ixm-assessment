@@ -1,0 +1,10 @@
+uuid: a1619a84-16f3-4b3e-8cd5-e2f927f14cb6
+langcode: en
+status: true
+dependencies: {  }
+id: team_members
+label: 'Team members'
+icon_uuid: null
+icon_default: null
+description: 'Display the Team Members view block'
+behavior_plugins: {  }

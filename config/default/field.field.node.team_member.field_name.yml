@@ -1,0 +1,24 @@
+uuid: 17ccb849-f89c-4adf-b58d-dac42b43d174
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - filter.format.basic_html
+    - node.type.team_member
+  module:
+    - text
+id: node.team_member.field_name
+field_name: field_name
+entity_type: node
+bundle: team_member
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

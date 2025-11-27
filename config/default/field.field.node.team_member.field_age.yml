@@ -1,0 +1,23 @@
+uuid: 1b0ef236-149f-4ac0-98ba-5ed80479b5fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.team_member
+id: node.team_member.field_age
+field_name: field_age
+entity_type: node
+bundle: team_member
+label: Age
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
