@@ -26,5 +26,6 @@ settings:
     block: block
   preselect_views:
     team_members: team_members
-  enabled_settings: {  }
+  enabled_settings:
+    title: title
 field_type: viewsreference

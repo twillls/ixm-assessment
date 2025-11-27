@@ -1,0 +1,4 @@
+name: "IXM Team Members"
+description: "Fetch and populate IXM team members"
+type: module
+core_version_requirement: ^9 || ^10 || ^11

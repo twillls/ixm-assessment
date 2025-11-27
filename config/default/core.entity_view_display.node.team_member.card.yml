@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - field.field.node.team_member.field_age
-    - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_image_path
     - field.field.node.team_member.field_lives_in
     - field.field.node.team_member.field_name
     - field.field.node.team_member.field_position
@@ -26,29 +26,28 @@ mode: card
 content:
   field_age:
     type: number_integer
-    label: inline
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
     weight: 2
     region: content
-  field_lives_in:
+  field_image_path:
     type: string
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
+    region: content
+  field_lives_in:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_name:
     type: text_default
@@ -67,11 +66,11 @@ content:
     region: content
   field_university:
     type: string
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
 hidden:
   links: true

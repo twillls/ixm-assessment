@@ -15,16 +15,8 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-{% if title %}
-  <h3>{{ title }}</h3>
-{% endif %}
-{% for row in rows %}
-  {%
-    set row_classes = [
-      default_row_class ? 'views-row row row-cols-1 row-cols-md-2 row-cols-xl-3 align-items-stretch',
-    ]
-  %}
-  <div{{ row.attributes.addClass(row_classes) }}>
+<div class="views-row row row-cols-1 row-cols-md-2 row-cols-xl-3 align-items-stretch">
+  {% for row in rows %}
     {{- row.content -}}
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>

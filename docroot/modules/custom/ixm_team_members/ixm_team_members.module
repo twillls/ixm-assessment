@@ -1,0 +1,45 @@
+<?php
+/**
+ * @file
+ * Contains ixm_team_members.module.
+ */
+
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+
+/**
+ * Fetches data from an external API.
+ *
+ * @return array|null
+ *   The decoded JSON data, or null on error.
+ */
+function ixm_team_members_get_external_data() {
+  $url = 'https://dummyjson.com/users?limit=6&select=firstName,lastName,age,university,company,address,image';
+
+  try {
+    $response = \Drupal::httpClient()->get($url);
+    $data = json_decode($response->getBody(), TRUE);
+    return $data;
+  } catch (Exception $e) {
+    \Drupal::messenger()->addError(t('Error fetching data from API: %error', ['%error' => $e->getMessage()]));
+    return NULL;
+  }
+}
+
+function createContentFromApiData(array $api_data) {
+  foreach ($api_data['users'] as $item) {
+    $node = Node::create([
+      'type' => 'team_member', // Replace with your content type machine name
+      'title' => $item['firstName'] . ' ' . $item['lastName'], // Map API data to node fields
+      'field_name' => $item['firstName'] . ' ' . $item['lastName'],
+      'field_image_path' => $item['image'],
+      'field_position' => $item['company']['title'],
+      'field_age' => $item['age'],
+      'field_lives_in' => $item['address']['city'] . ', ' . $item['address']['stateCode'],
+      'field_university' => $item['university']
+    ]);
+    $node->save();
+  }
+}
+
+createContentFromApiData(ixm_team_members_get_external_data());

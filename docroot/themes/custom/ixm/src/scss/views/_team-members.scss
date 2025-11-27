@@ -1,14 +1,11 @@
 .paragraph--type--team-members {
+  --bs-gutter-x: 1.875rem;
+  --bs-gutter-y: 1.875rem;
+
   margin: 4.375rem 0;
 
-  .viws-row.row,
-  .paragraph__header.row {
-    --bs-gutter-x: 2.5rem;
-    --bs-gutter-y: 2.5rem;
-  }
-
   .paragraph__header {
-    margin-bottom: 4.375rem;
+    margin-bottom: 1.875rem;
 
     h2 {
       width: fit-content;
@@ -29,7 +26,6 @@
     }
 
     @include media-breakpoint-down(xl) {
-      margin-bottom: 1.875rem;
       text-align: center;
 
       &.row {
@@ -37,5 +33,10 @@
         --bs-gutter-y: 1.875rem;
       }
     }
+  }
+
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 2.5rem;
   }
 }

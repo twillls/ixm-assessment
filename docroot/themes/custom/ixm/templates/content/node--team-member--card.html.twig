@@ -61,15 +61,14 @@
  *
  */
 #}
-
-{% embed 'ixm:card' with {
+{% include 'ixm:card' with {
   name: content.field_name,
   position: content.field_position,
+  image: content.field_image_path,
+  ageLabel: 'Age: ',
   age: content.field_age,
+  locationLabel: 'Lives in: ',
   location: content.field_lives_in,
+  educationLabel: 'University: ',
   education: content.field_university
 } %}
-  {% block image %}
-    {{ content.field_image }}
-  {% endblock %}
-{% endembed %}

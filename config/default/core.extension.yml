@@ -28,6 +28,7 @@ module:
   help: 0
   history: 0
   image: 0
+  ixm_team_members: 0
   layout_builder: 0
   layout_builder_blocks: 0
   layout_builder_modal: 0

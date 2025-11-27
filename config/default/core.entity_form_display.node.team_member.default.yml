@@ -4,14 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.team_member.field_age
-    - field.field.node.team_member.field_image
+    - field.field.node.team_member.field_image_path
     - field.field.node.team_member.field_lives_in
     - field.field.node.team_member.field_name
     - field.field.node.team_member.field_position
     - field.field.node.team_member.field_university
     - node.type.team_member
   module:
-    - media_library
     - path
     - text
 id: node.team_member.default
@@ -32,12 +31,13 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
-  field_image:
-    type: media_library_widget
-    weight: 124
+  field_image_path:
+    type: string_textfield
+    weight: 128
     region: content
     settings:
-      media_types: {  }
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_lives_in:
     type: string_textfield
