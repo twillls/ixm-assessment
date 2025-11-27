@@ -1,4 +1,16 @@
 # IXM Developer Skill Assessment
+## Taylor Wills -- Time Spent
+Header and hero desktop styling: 1.5 hours
+Footer desktop styling: 1.5 hours
+Header mobile styling: 2 hours
+Hero mobile styling: 30min
+Footer mobile styling: 30min
+Create team member CT, view, view reference paragraph: 40min
+Style team member cards/view: 2 hour
+Create custom module: 2 hour
+Header adjustments: 15 min
+Final adjustments: 1 hour
+Export db and update readme: 15 min
 
 ## Objective:
 This assessment aims to evaluate your expertise in both frontend and backend Drupal development, as well as your general web development skills.
