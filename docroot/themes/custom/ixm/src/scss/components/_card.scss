@@ -1,6 +1,6 @@
 .card {
-  --bs-gutter-x: 1.875rem;
-  --bs-gutter-y: 1.875rem;
+  // --bs-gutter-x: 1.875rem;
+  // --bs-gutter-y: 1.875rem;
 
   border: 0;
 
@@ -70,8 +70,8 @@
     font-weight: 700;
   }
 
-  @include media-breakpoint-up(xl) {
-    --bs-gutter-x: 2.5rem;
-    --bs-gutter-y: 2.5rem;
-  }
+  // @include media-breakpoint-up(xl) {
+  //   --bs-gutter-x: 2.5rem;
+  //   --bs-gutter-y: 2.5rem;
+  // }
 }

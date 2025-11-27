@@ -1,5 +1,9 @@
+body:has(.navbar-collapse.show) {
+  overflow: hidden;
+}
+
 header {
-  padding: 1rem 0.75rem;
+  padding: 1rem 0;
 
   &.position-sticky {
     top: 0;
@@ -24,7 +28,10 @@ header {
     border: 0;
 
     .navbar-toggler-icon {
-      background-image: url("../images/menu.svg");
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: none;
     }
   }
 
@@ -35,16 +42,19 @@ header {
   }
 
   @include media-breakpoint-up(xl) {
-    // padding: 4.375rem 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 13.125rem;
     padding: 0;
     transition: height 0.5s ease-in-out;
 
     &.sticky-lg-top {
-      // padding: 2.1875rem 0;
       height: 8.75rem;
+    }
+
+    .navbar-collapse {
+      justify-content: end;
     }
   }
 
@@ -59,7 +69,7 @@ header {
       background-color: $light-grey;
 
       &.show {
-        height: calc(100dvh - 4.25rem);
+        height: calc(100dvh - 5.25rem);
       }
 
       > div {

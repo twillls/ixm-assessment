@@ -8,12 +8,15 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  // xxl: 1400px
+  xxl: 1400px
 );
 
 // Containers
 .container {
+  --bs-gutter-x: 1.25rem;
+
   max-width: 77.5625rem;
+  padding: 0 var(--bs-gutter-x);
 }
 
 // Base colors
@@ -26,9 +29,16 @@ $black: #000;
 // Font
 $font-family-base: "Space Grotesk", sans-serif;
 
+body {
+  color: $black;
+}
+
 // Bootstrap overrides
 :root {
   --bs-light: $light-grey;
   --bs-light-rgb: 243, 243, 243;
   --bs-btn-bg: $secondary;
+  --bs-nav-link-color: $black;
+  --bs-nav-link-hover-color: $primary;
+  --bs-body-color: $black;
 }

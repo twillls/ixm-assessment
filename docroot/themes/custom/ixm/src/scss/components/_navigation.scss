@@ -1,7 +1,34 @@
 .nav.navbar-nav {
   --bs-nav-link-padding-y: 0;
   --bs-nav-link-padding-x: 0;
-  --bs-nav-link-color: $black;
 
+  flex-wrap: nowrap;
   gap: 2.5rem;
+
+  .nav-item {
+    width: fit-content;
+    font-size: 1.5rem;
+    line-height: 1.166;
+
+    .nav-link:not(.btn) {
+      color: $black;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    gap: 1.5rem;
+
+    .nav-item {
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    gap: 2.5rem;
+  }
 }

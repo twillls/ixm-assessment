@@ -1,9 +1,14 @@
 // Add footer styles to this file.
 .footer {
-  padding: 3.4375rem 3.75rem 3.125rem;
+  padding: 3.125rem 1.25rem 1.875rem;
 
   hr {
     opacity: 1;
+  }
+
+  .navbar-brand {
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .nav.navbar-nav {
@@ -16,11 +21,30 @@
       gap: 1.25rem;
 
       a {
+        position: relative;
         width: 1.875rem;
         height: 1.875rem;
         background-repeat: no-repeat;
         background-size: contain;
         font-size: 0;
+
+        &::after {
+          position: absolute;
+          content:"";
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          border-radius: 100%;
+          mix-blend-mode: screen;
+          transition: all 0.15s ease;
+        }
+
+        &:hover {
+          &::after {
+            background-color: $primary;
+          }
+        }
       }
 
       a[href*="facebook"] {
@@ -47,6 +71,7 @@
 
   @include media-breakpoint-up(xl) {
     border-radius: 2.8125rem 2.8125rem 0 0;
+    padding: 3.4375rem 3.75rem 3.125rem;
   }
 
   @include media-breakpoint-down(xl) {
@@ -58,6 +83,10 @@
     .nav.navbar-nav {
       gap: 0.9375rem;
       text-decoration: none;
+    }
+
+    .col-12 {
+      text-align: center;
     }
   }
 }
