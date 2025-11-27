@@ -41,6 +41,8 @@
   }
 
   @include media-breakpoint-down(lg) {
+    margin-top: 0.75rem;
+
     &__grid__title {
       order: 1;
       margin-bottom: 2.1875rem;

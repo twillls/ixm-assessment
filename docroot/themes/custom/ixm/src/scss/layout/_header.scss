@@ -35,7 +35,17 @@ header {
   }
 
   @include media-breakpoint-up(xl) {
-    padding: 4.375rem 0;
+    // padding: 4.375rem 0;
+    display: flex;
+    align-items: center;
+    height: 13.125rem;
+    padding: 0;
+    transition: height 0.5s ease-in-out;
+
+    &.sticky-lg-top {
+      // padding: 2.1875rem 0;
+      height: 8.75rem;
+    }
   }
 
   @include media-breakpoint-down(xl) {
