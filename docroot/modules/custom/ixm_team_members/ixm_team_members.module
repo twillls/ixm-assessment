@@ -26,6 +26,9 @@ function ixm_team_members_get_external_data() {
   }
 }
 
+/**
+ * Create nodes from API Data
+ */
 function createContentFromApiData(array $api_data) {
   foreach ($api_data['users'] as $item) {
     $node = Node::create([
@@ -42,4 +45,9 @@ function createContentFromApiData(array $api_data) {
   }
 }
 
-createContentFromApiData(ixm_team_members_get_external_data());
+/**
+ * Deploy hook to populate team members so it only runs on deploy
+ */
+function ixm_team_members_deploy_0001_populate_data() {
+  createContentFromApiData(ixm_team_members_get_external_data());
+}

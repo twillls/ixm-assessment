@@ -11,6 +11,7 @@ Create custom module: 2 hour
 Header adjustments: 15 min
 Final adjustments: 1 hour
 Export db and update readme: 15 min
+Move API Call into deploy hook: 15 min
 
 ## Objective:
 This assessment aims to evaluate your expertise in both frontend and backend Drupal development, as well as your general web development skills.
